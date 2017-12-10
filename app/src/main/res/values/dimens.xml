@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="common_horizontal_margin">16dp</dimen>
+    <dimen name="common_vertical_margin">16dp</dimen>
+    <dimen name="common_vertical_margin_small">8dp</dimen>
+    <dimen name="common_spacing_small">4dp</dimen>
+    <dimen name="common_spacing_normal">8dp</dimen>
+    <dimen name="common_spacing_big">16dp</dimen>
+    <dimen name="common_text_size_large">18sp</dimen>
+    <dimen name="common_text_size_normal">16sp</dimen>
+    <dimen name="common_text_size_small">14sp</dimen>
+
+    <!--侧边导航栏-->
+    <dimen name="nav_header_height">160dp</dimen>
+
+
+
+</resources>
