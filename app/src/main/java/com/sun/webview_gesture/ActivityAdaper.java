@@ -71,6 +71,9 @@ public class ActivityAdaper extends RecyclerView.Adapter <ActivityAdaper.Activit
 
                        Intent intent =new Intent(v.getContext(),MxBrowserActivity.class);
                        v.getContext().startActivity(intent);
+                   }else if("JsActivity".equals(mTextView.getText())){
+                       Intent intent =new Intent(v.getContext(),JsActivity.class);
+                       v.getContext().startActivity(intent);
                    }
 
 

@@ -7,7 +7,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
@@ -45,7 +44,7 @@ public class MyScrollView extends ScrollView {
     int fixY;
     TextView  upText;
     boolean close=false;
-Scroller mScroller;
+    Scroller mScroller;
     ObjectAnimator mObjectAnimator;
     private void init(){
         int contentHeight=ViewUtils.getCurScreenHeight(getContext())-ViewUtils.getStatusBarHeight(getContext());

@@ -11,7 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/holo_blue_bright"
-            android:id="@+id/view_pager"></com.sun.webview_test.MainVeiwPager>
+            android:id="@+id/view_pager"/>
 
 
     </FrameLayout>
