@@ -23,6 +23,7 @@
         <activity android:name=".DrawerlayoutFragmentActivity" />
         <activity android:name="com.sun.webview_test.MxBrowserActivity" />
         <activity android:name=".JsActivity" />
+        <activity android:name=".StatusBarActivity" />
     </application>
 
 

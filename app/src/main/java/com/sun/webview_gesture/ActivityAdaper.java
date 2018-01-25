@@ -74,6 +74,9 @@ public class ActivityAdaper extends RecyclerView.Adapter <ActivityAdaper.Activit
                    }else if("JsActivity".equals(mTextView.getText())){
                        Intent intent =new Intent(v.getContext(),JsActivity.class);
                        v.getContext().startActivity(intent);
+                   }else if("StatusBarActivity".equals(mTextView.getText())){
+                       Intent intent =new Intent(v.getContext(),StatusBarActivity.class);
+                       v.getContext().startActivity(intent);
                    }
 
 

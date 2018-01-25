@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         list.add("DrawerlayoutFragmentActivity");
         list.add("MxBrowserActivity");
         list.add("JsActivity");
+        list.add("StatusBarActivity");
 
         ActivityAdaper activityAdaper=new ActivityAdaper(this,list);
 
