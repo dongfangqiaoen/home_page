@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 
 import com.sun.utils.StatusBarUtil;
 
@@ -13,14 +14,18 @@ import com.sun.utils.StatusBarUtil;
 
 public class StatusBarActivity extends AppCompatActivity implements View.OnClickListener {
 
+    Button first_bt;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.status_bar_main_layout);
-        findViewById(R.id.first_button).setOnClickListener(this);
+        first_bt=findViewById(R.id.first_button);
+        first_bt.setOnClickListener(this);
         findViewById(R.id.second_button).setOnClickListener(this);
         findViewById(R.id.third_button).setOnClickListener(this);
+        findViewById(R.id.four_button).setOnClickListener(this);
 
     }
 
@@ -28,10 +33,10 @@ public class StatusBarActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.first_button:
-                StatusBarUtil.hideSystemUI(getWindow());
+                StatusBarUtil.hideSystemUI(this.getWindow());
                 break;
             case R.id.second_button:
-                StatusBarUtil.showSystemUI(getWindow());
+                StatusBarUtil.showSystemUI(this.getWindow());
                 break;
             case R.id.third_button:
                 StatusBarUtil.setTranslucent(this);

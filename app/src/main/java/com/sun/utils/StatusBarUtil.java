@@ -184,7 +184,7 @@ public class StatusBarUtil {
 
     public static void setTranslucent(Window window) {
 
-
+        Log.d(TAG,"setTranslucent");
         //对小米兼容
         if (isMiUi()) {
             MIUISetStatusBarLightMode(window, true);
@@ -237,6 +237,7 @@ public class StatusBarUtil {
        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
            // 设置状态栏透明
            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+           Log.d(TAG,"setNoTranslucent");
            int ui = window.getDecorView().getSystemUiVisibility();
            if (false) {
                ui |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
